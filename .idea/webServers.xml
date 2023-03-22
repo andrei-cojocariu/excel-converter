@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="03b70eb4-0228-4583-b61d-fcc3ebde1608" name="test" url="http://10.1.165.213">
+        <fileTransfer rootFolder="/var/www/awasd-wpp-fe" host="10.1.165.213" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
