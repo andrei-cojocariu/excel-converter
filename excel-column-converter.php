@@ -20,11 +20,11 @@ $converter = new ExcelColumnConverter();
 if (is_numeric($input) && $mode == '--to-name') {
     // Convert a column number to its corresponding name
     $columnName = $converter->convertToColumnTitle($input);
-    echo "{$input} -> {$columnName}\n";
+    echo "$input -> $columnName\n";
 } elseif (is_string($input) && $mode == '--to-number') {
     // Convert a column name to its corresponding number
     $columnNumber = $converter->convertToColumnNumber($input);
-    echo "{$input} -> {$columnNumber}\n";
+    echo "$input -> $columnNumber\n";
 } elseif ($input == '-u') {
     // Run the unit tests
     $result = (new TestRunner)->run(new TestSuite(ExcelColumnConverterTest::class));
