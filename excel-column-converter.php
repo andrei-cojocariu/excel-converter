@@ -10,8 +10,8 @@ use PHPUnit\TextUI\TestRunner;
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/vendor/phpunit/phpunit/src/TextUI/TestRunner.php';
 // Get the input value and mode from the command line arguments
-$input = isset($argv[1]) ? $argv[1] : null;
-$mode = isset($argv[2]) ? $argv[2] : null;
+$input = $argv[1] ?? null;
+$mode = $argv[2] ?? null;
 
 // Create an instance of the ExcelColumnConverter class
 $converter = new ExcelColumnConverter();
