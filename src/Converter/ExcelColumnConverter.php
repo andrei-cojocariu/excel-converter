@@ -19,10 +19,8 @@ class ExcelColumnConverter implements ExcelColumnConverterInterface
         }
 
         $columnNumber = 0;
-        $len = strlen($columnTitle);
 
-        for ($i = 0; $i < $len; $i++) {
-            $char = strtoupper($columnTitle[$i]);
+        foreach (str_split(strtoupper($columnTitle)) as $char) {
             $columnNumber = $columnNumber * 26 + (ord($char) - 64);
         }
 
